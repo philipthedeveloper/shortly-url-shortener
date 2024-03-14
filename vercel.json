@@ -12,12 +12,12 @@
     ],
     "routes": [
         {
-            "src": "/",
-            "dest": "static/index.html"
-        },
-        {
             "src": "/:slug",
             "dest": "index.js"
+        },
+        {
+            "src": "/",
+            "dest": "static/index.html"
         },
         {
             "src": "/url",
