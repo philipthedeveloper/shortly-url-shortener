@@ -30,6 +30,10 @@
         {
             "src": "/(.+)",
             "dest": "static/$1"
+        },
+        {
+            "src": "/*",
+            "dest": "index.js"
         }
     ]
 }
