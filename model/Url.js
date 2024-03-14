@@ -11,7 +11,7 @@ const UrlSchema = new Schema(
       type: String,
       require: true,
     },
-    expireAt: { type: Date, default: Date.now, index: { expires: "24h" } },
+    expireAt: { type: Date, expires: 86400 },
   },
   { timestamps: true }
 );

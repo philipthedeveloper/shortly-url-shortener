@@ -134,7 +134,6 @@ const copyAction = (e) => {
     if (!shortenedUrlContent) return;
     copyToClipboard(shortenedUrlContent).then(
       () => {
-        console.log("Text copied successfully!");
         e.target.remove();
         setupCopiedIcon();
       },

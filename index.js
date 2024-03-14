@@ -44,7 +44,6 @@ const schema = yup.object().shape({
 });
 
 app.post("/url", async (req, res, next) => {
-  console.log(req.body);
   let { slug, url } = req.body;
   try {
     await schema.validate({ slug, url });
@@ -52,7 +51,8 @@ app.post("/url", async (req, res, next) => {
       slug = nanoid(9);
     }
     slug = slug.toLowerCase();
-    const newUrl = { url, slug };
+
+    const newUrl = { url, slug, expireAt: new Date(Date.now()) };
     const createdUrl = await Url.create(newUrl);
     res.status(201).json(createdUrl);
   } catch (err) {
