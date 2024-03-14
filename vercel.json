@@ -10,7 +10,15 @@
             "use": "@vercel/static"
         },
         {
-            "src": "static/**/*.css, static/**/*.js, static/**/*.(png|jpg|jpeg|gif|svg)",
+            "src": "/**/*.css",
+            "use": "@vercel/static"
+        },
+        {
+            "src": "/**/*.js",
+            "use": "@vercel/static"
+        },
+        {
+            "src": "/**/*.(png|jpg|jpeg|gif|svg)",
             "use": "@vercel/static"
         }
     ],
