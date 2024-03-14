@@ -12,15 +12,15 @@
     ],
     "routes": [
         {
+            "src": "/:slug",
+            "dest": "index.js"
+        },
+        {
             "src": "/",
             "dest": "static/index.html"
         },
         {
             "src": "/api/(.*)",
-            "dest": "index.js"
-        },
-        {
-            "src": "/:slug",
             "dest": "index.js"
         },
         {
