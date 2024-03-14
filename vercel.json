@@ -28,11 +28,11 @@
             "dest": "static/$1"
         },
         {
-            "src": "/css",
+            "src": "/css/*",
             "dest": "static/$1"
         },
         {
-            "src": "/img",
+            "src": "/img/*",
             "dest": "static/$1"
         },
         {
