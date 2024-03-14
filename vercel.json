@@ -24,7 +24,7 @@
             "dest": "index.js"
         },
         {
-            "src": "/(.+)",
+            "src": "/.(css|js)$",
             "dest": "static/$1"
         },
         {
