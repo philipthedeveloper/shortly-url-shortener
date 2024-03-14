@@ -16,7 +16,7 @@
             "dest": "static/index.html"
         },
         {
-            "src": "/api/(.*)",
+            "src": "/(.*)",
             "dest": "index.js"
         },
         {
