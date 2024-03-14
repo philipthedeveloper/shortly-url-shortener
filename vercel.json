@@ -16,7 +16,15 @@
             "dest": "static/index.html"
         },
         {
-            "src": "/(.*)",
+            "src": "/api/(.*)",
+            "dest": "index.js"
+        },
+        {
+            "src": "/:slug",
+            "dest": "index.js"
+        },
+        {
+            "src": "/url",
             "dest": "index.js"
         },
         {
