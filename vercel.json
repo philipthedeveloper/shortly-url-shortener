@@ -8,20 +8,30 @@
         {
             "src": "static/**",
             "use": "@vercel/static"
+        },
+        {
+            "src": {
+                "includes": [
+                    "static/**/*.css",
+                    "static/**/*.js",
+                    "static/**/*.(png|jpg|jpeg|gif|svg)"
+                ]
+            },
+            "use": "@vercel/static"
         }
     ],
     "routes": [
         {
-            "src": "/url/(.*)",
-            "dest": "/index.js"
-        },
-        {
-            "src": "/(.*)",
-            "dest": "/index.js"
-        },
-        {
             "src": "/",
             "dest": "static/index.html"
+        },
+        {
+            "src": "/:slug",
+            "dest": "index.js"
+        },
+        {
+            "src": "/url",
+            "dest": "index.js"
         }
     ]
 }
