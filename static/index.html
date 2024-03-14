@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shortly - Url Shortener</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Truculenta:opsz,wght@12..72,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/2.1.0/uicons-regular-rounded/css/uicons-regular-rounded.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/2.1.0/uicons-bold-rounded/css/uicons-bold-rounded.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/2.1.0/uicons-solid-rounded/css/uicons-solid-rounded.css"
+    />
+    <script src="/app.js" defer></script>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body class="truculenta-regular">
+    <h1 class="truculenta-bold">Shortly - Url Shortener</h1>
+    <p class="note">
+      Note: Links expire after 24 hours
+      <i class="fi fi-sr-cross-small" title="close-note"></i>
+    </p>
+    <p class="not-found truculenta-regular">Link not found</p>
+    <form action="" class="url-form" name="url-form" method="post">
+      <div class="form-group">
+        <label for="url">Url</label>
+        <input
+          type="text"
+          id="url"
+          name="url"
+          placeholder="Enter your url..."
+        />
+      </div>
+      <div class="form-group">
+        <label for="slug">Slug (Optional)</label
+        ><input
+          type="text"
+          id="slug"
+          name="slug"
+          placeholder="Preferred shorened url slug..."
+        />
+      </div>
+      <p class="clipboard">
+        <span class="shortened-url"></span>
+        <i class="fi fi-rr-copy copy-shortened-url"></i>
+      </p>
+      <button type="submit" class="submit-form">
+        <img src="/imgs/loader.svg" alt="" width="40" />
+        <span>Creat Short Url</span>
+      </button>
+    </form>
+  </body>
+</html>

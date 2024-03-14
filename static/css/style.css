@@ -1,0 +1,240 @@
+:root {
+  --base-color: rgb(13, 18, 24);
+}
+
+.truculenta-thin {
+  font-family: "Truculenta", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.truculenta-extralight {
+  font-family: "Truculenta", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.truculenta-light {
+  font-family: "Truculenta", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.truculenta-regular {
+  font-family: "Truculenta", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.truculenta-medium {
+  font-family: "Truculenta", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.truculenta-semibold {
+  font-family: "Truculenta", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.truculenta-bold {
+  font-family: "Truculenta", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.truculenta-extrabold {
+  font-family: "Truculenta", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.truculenta-black {
+  font-family: "Truculenta", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #fff;
+}
+
+body {
+  width: 100dvw;
+  min-height: 100dvh;
+  background-color: var(--base-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}
+
+.not-found,
+.error-para,
+.note {
+  text-align: center;
+  color: white;
+  background-color: lightcoral;
+  border: 1px solid orangered;
+  padding: 1rem;
+  font-size: 0.85rem;
+  border-radius: 0.4rem;
+  display: none;
+}
+
+.note {
+  display: block;
+  background-color: cornflowerblue;
+  border-color: royalblue;
+  margin: 1rem auto;
+  font-weight: bold;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.note i {
+  display: flex;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.error-para {
+  display: block;
+  margin-top: 1.5rem;
+}
+
+form,
+.note {
+  width: 90%;
+  max-width: 500px;
+  margin: 1.5rem auto;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.form-group input {
+  border-radius: 0.4rem;
+  border: none;
+  outline: none;
+  color: var(--base-color);
+  padding: 1rem 1rem;
+  background: rgb(233, 233, 233);
+  font-family: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+form button {
+  display: inline-block;
+  width: 100%;
+  padding: 0.85rem 1rem;
+  text-align: center;
+  border-radius: 0.4rem;
+  border: none;
+  outline: none;
+  font-family: inherit;
+  font-weight: 600;
+  margin-top: 1.5rem;
+  color: #fff;
+  background-color: royalblue;
+  cursor: pointer;
+  transition: 0.4s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+form button img {
+  width: 25px;
+  opacity: 0.8;
+  display: none;
+}
+
+form button.loading img {
+  display: block;
+}
+
+form button:hover {
+  background-color: rgb(39, 75, 180);
+}
+
+form button:focus {
+  background-color: rgb(25, 49, 121);
+}
+
+form .clipboard {
+  background-color: black;
+  padding: 0.5rem 0.8rem;
+  border-radius: 0.4rem;
+  justify-content: space-between;
+  display: none;
+}
+
+.clipboard i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #343434;
+  width: 30px;
+  height: 30px;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+
+.clipboard i:hover {
+  background-color: #1f1f1f;
+}
+
+@media screen and (min-width: 600px) {
+  h1 {
+    font-size: 1.75rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 2.4rem;
+  }
+}
