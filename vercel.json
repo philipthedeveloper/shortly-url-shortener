@@ -24,15 +24,7 @@
             "dest": "index.js"
         },
         {
-            "src": "/*.js",
-            "dest": "static/$1"
-        },
-        {
-            "src": "/css/*",
-            "dest": "static/$1"
-        },
-        {
-            "src": "/img/*",
+            "src": "/(.css)",
             "dest": "static/$1"
         },
         {
